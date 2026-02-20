@@ -79,54 +79,35 @@ body {
 }
 
 /* Colores pastel */
+
 .color1 {
-    background-color: #ffd1dc;
+    background-color: #ff8080;
 }
 .color2 {
-    background-color: #ffecd1;
-}
-.color3 {
-    background-color: #d1ffea;
-}
-.color4 {
-    background-color: #e3d1ff;
-}
-.color5 {
-    background-color: #ffbf80;
-}
-.color6 {
     background-color: #ffef96;
 }
-.color7 {
-    background-color: #aaff80;
+.color3 {
+    background-color: #80e8ff;
 }
-.color8 {
-    background-color: #96ffe0;
-}
-.color9 {
+.color4 {
     background-color: #ff9cf0;
 }
-.color10 {
-    background-color: #d1c2ff;
+.color5 {
+    background-color: #95ffdf;
 }
-.color11 {
-    background-color: #b2b2b2;
+.color6 {
+    background-color: #78a3f1;
 }
-.color12 {
-    background-color: #99e6e6;
+.color7 {
+    background-color: #5cff6a;
 }
-.color13 {
-    background-color: #d98cb3;
+.color8 {
+    background-color: #ffb171;
 }
-.color14 {
-    background-color: #d6ff80;
-}
-.color15 {
+.color9 {
     background-color: #ffe080;
 }
-.color16 {
-    background-color: #80ffbf;
-}
+
 
 
  .button-3 {
