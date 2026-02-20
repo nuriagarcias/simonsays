@@ -3,7 +3,7 @@
     Mostra el color hexadecimal passat per paràmetre
  */
 
-const colors= ['#ffd1dc', '#ffef96', '#aaff80']
+const colors= ['#ff7171', '#fd9cb2', '#ffa2de', '#bb92ed', '#79dbff', '#ffd7d0', '#729ef8', '#68d5ab', '#ffe680']
 const sequenciaSimon= []
 let elegit = ""
 
