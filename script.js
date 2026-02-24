@@ -6,25 +6,48 @@
 const colors= ['#ff7171', '#fd9cb2', '#ffa2de', '#bb92ed', '#79dbff', '#ffd7d0', '#729ef8', '#68d5ab', '#ffe680']
 const sequenciaSimon= []
 let elegit = ""
+let comptadorSimon;
+let comptadorMostrats;
 
 function iniciarPartida(){
     numAleatori = Math.floor(Math.random() * colors.length);
     elegit = colors[numAleatori]
     sequenciaSimon.push(elegit);
-    showNotification(elegit);
+    comptadorMostrats = 0
+    comptadorSimon =0;
+    showNotification()
+
 }
 
-function showNotification(message) {
-    console.log(message)
+function showNotification() {
+
     var notification = document.getElementById('notification');
-    notification.style.backgroundColor=message
+    notification.style.backgroundColor=sequenciaSimon[comptadorMostrats];
     notification.style.display = 'block';
 
     setTimeout(function() {
         notification.style.display = 'none';
+        comptadorMostrats +=1
+        if(comptadorMostrats < sequenciaSimon.length){
+            showNotification();
+        }
     }, 2000);
 }
 
-function comprovar(color){
-    console.log(color)
+function comprovar(colors){
+    console.log(colors)
+    if (colors === sequenciaSimon[comptadorSimon]){
+        comptadorSimon++;
+        if (comptadorSimon === sequenciaSimon.length){
+            iniciarPartida();
+        }
+    }else{
+
+        console.log('game over')
+        reiniciar()
+    }
+}
+
+function reiniciar(){
+    sequenciaSimon.splice(0,sequenciaSimon.length);
 }
