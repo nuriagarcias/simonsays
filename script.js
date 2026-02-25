@@ -9,6 +9,7 @@ let elegit = ""
 let comptadorSimon;
 let comptadorMostrats;
 
+
 function iniciarPartida(){
     numAleatori = Math.floor(Math.random() * colors.length);
     elegit = colors[numAleatori]
@@ -16,6 +17,7 @@ function iniciarPartida(){
     comptadorMostrats = 0
     comptadorSimon =0;
     showNotification()
+    document.getElementById("message").innerHTML = "Nivell " + sequenciaSimon.length;
 
 }
 
@@ -40,9 +42,10 @@ function comprovar(colors){
         comptadorSimon++;
         if (comptadorSimon === sequenciaSimon.length){
             iniciarPartida();
+
         }
     }else{
-
+        document.getElementById("message").innerHTML = "Game over";
         console.log('game over')
         reiniciar()
     }
