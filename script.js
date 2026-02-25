@@ -53,4 +53,5 @@ function comprovar(colors){
 
 function reiniciar(){
     sequenciaSimon.splice(0,sequenciaSimon.length);
+
 }
