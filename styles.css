@@ -4,7 +4,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background: #f6f8fd;
 }
+
 
 .panell{
     display: grid;
@@ -13,6 +15,7 @@ body {
     grid-auto-rows: minmax(100px, auto);
 }
 
+/*Títol*/
 .header {
     grid-column: 1 / 4;
     grid-row: 1;
@@ -20,57 +23,64 @@ body {
     justify-self: center;
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: #ffffff;
+    background-color: #2b2d35;
+    color: #e6eaf1;
     bottom: 0;
     left: 0;
     width: 100%;
     font-size: 30px;
 }
 
+/*Panell que mostra el color que toca*/
 .memory-next {
     grid-column: 1;
     grid-row: 2;
-
     align-self: center;
     justify-self: center;
-
     display: flex;
     width: 200px;
     height: 200px;
     margin: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #9aa9e3;
+    border-radius: 30px;
 }
 
+/*Panell amb colors*/
 .memory-game {
     grid-column: 2;
     grid-row: 2;
     display: inline-block;
 }
 
+/*Missatge*/
 .memory-message {
     grid-column: 3;
     grid-row: 2;
     align-self: center;
-    justify-self: center
+    justify-self: center;
+    color: #193961;
 }
 
+/*Botons*/
 .buttons{
     grid-column: 2;
     grid-row: 3;
     align-self: center;
-    justify-self: center
+    justify-self: center;
 }
 
+/*Cada fila de colors*/
 .row {
     display: flex;
 }
 
+/*Cada color del panell*/
 .card {
     width: 100px;
     height: 100px;
     margin: 5px;
-    border: 1px solid #ccc;
+    border-radius: 15px;
+    border: 1px solid #8b97bd;
     transition: background-color 0.3s ease;
 }
 
@@ -78,8 +88,7 @@ body {
     cursor: pointer;
 }
 
-/* Colores pastel */
-
+/* Colors */
 .color1 {
     background-color: #ff7171;
 }
@@ -108,8 +117,11 @@ body {
     background-color: #ffe680;
 }
 
+button:active {
+    background-color: #ffffff75;
+}
 
-
+/*Botó iniciar i efectes de botó per als colors*/
  .button-3 {
      cursor: pointer;
      outline: 0;
@@ -129,5 +141,6 @@ body {
          background-color: #0b5ed7;
          border-color: #0a58ca;
      }
+     font-family: "Cantarell Extra Bold";
 
  }
